@@ -14,22 +14,63 @@ html {
   
   body {
     font-size: 1.6rem;
-    font-family: 'Karla', sans-serif;  }
+    font-family: 'Karla', sans-serif;  
+  }
   
   .container {
     max-width: 98rem;
     margin: 0 auto;
+    height: 20vh;
+    display: flex;
+    align-items: center;
   }
 
   .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
   
   .col-1 {
     width: 50%;
+  }
+
+  .container-logo {
+    display: inline-block;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .nav-list-item {
+      display: inline-block;
+      
+      .nav-list-item-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $dark-grayish-violet;
+        padding: 0.8rem 1.6rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $very-dark-violet;
+        }
+      }
+
+      .button {
+        color: $very-dark-violet;
+        border: 0.1rem solid $very-dark-violet;
+        outline: none;
+
+        &:hover {
+          background-color: $very-dark-violet;
+          color: $very-light-gray;
+        }
+      }
+    }
   }
 
   @import "media";
