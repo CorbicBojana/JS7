@@ -14,15 +14,13 @@ html {
   
   body {
     font-size: 1.6rem;
-    font-family: 'Karla', sans-serif;  
+    font-family: 'Karla', sans-serif; 
+    overflow-x: hidden; 
   }
   
   .container {
     max-width: 98rem;
     margin: 0 auto;
-    height: 20vh;
-    display: flex;
-    align-items: center;
   }
 
   .row {
@@ -34,6 +32,56 @@ html {
   
   .col-1 {
     width: 50%;
+  }
+
+  h1 {
+    font-size: 5.8rem;
+    font-family: 'DM Serif Display', serif;
+    padding-top: 6rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 0.1rem;
+      background-color: $very-light-gray;
+    }
+  }
+
+  p {
+    margin: 2rem 0;
+    line-height: 1.4;
+  }
+
+  .button {
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .button-primary {
+    background-color: transparent;
+    color: $very-light-gray;
+    border: 0.1rem solid $very-light-gray;
+
+    &:hover {
+      background-color: $very-light-gray;
+      color: $very-dark-violet;
+      border-color: $very-light-gray;
+    }
+  }
+
+  // HEADER
+  .container-header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
   }
 
   .container-logo {
@@ -52,7 +100,7 @@ html {
         text-decoration: none;
         text-transform: uppercase;
         color: $dark-grayish-violet;
-        padding: 0.8rem 1.6rem;
+        padding: 0.8rem 2rem;
         cursor: pointer;
 
         &:hover {
@@ -60,7 +108,7 @@ html {
         }
       }
 
-      .button {
+      .active {
         color: $very-dark-violet;
         border: 0.1rem solid $very-dark-violet;
         outline: none;
@@ -72,5 +120,44 @@ html {
       }
     }
   }
+
+  // INTRO
+  .intro {
+    height: 90vh;
+    display: flex;
+    padding: 10rem 0;
+    background-color: $very-dark-violet;
+    border-top: 0.1rem solid $dark-grayish-violet;
+
+    .container {
+      display: flex;
+    }
+
+    .intro-content {
+      width: 50%;
+      color: $very-light-gray;
+    }
+
+    .intro-img {
+      width: 50%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .intro-img-top {
+      position: absolute;
+      top: 10%;
+      right: 0;
+    }
+
+    .intro-img-bottom {
+      position: absolute;
+      left: 0;
+      bottom: -60%;
+    }
+  }
+
 
   @import "media";
