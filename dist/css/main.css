@@ -169,3 +169,14 @@ p {
 .hero p {
   color: #837d87;
   margin-right: 2rem; }
+
+.work {
+  background-color: #2b272f;
+  padding: 0 8rem; }
+  .work h1 {
+    width: 50%;
+    display: inline-block; }
+    .work h1:after {
+      background-color: #2b272f; }
+  .work .button-holder {
+    background-image: url(../../dist/images/bg-pattern-how-we-work-desktop.svg); }
