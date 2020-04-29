@@ -26,12 +26,16 @@ html {
   .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
   
-  .col-1 {
+  .col-2 {
     width: 50%;
+  }
+
+  .col-3 {
+    width: 33%;
   }
 
   h1 {
@@ -49,6 +53,12 @@ html {
       height: 0.1rem;
       background-color: $very-light-gray;
     }
+  }
+
+  h3 {
+    font-size: 3.2rem;
+    font-family: 'DM Serif Display', serif;
+    margin-top: 4rem;
   }
 
   p {
@@ -126,6 +136,7 @@ html {
     height: 90vh;
     display: flex;
     padding: 10rem 0;
+    margin-bottom: 20rem;
     background-color: $very-dark-violet;
     border-top: 0.1rem solid $dark-grayish-violet;
 
@@ -156,6 +167,24 @@ html {
       position: absolute;
       left: 0;
       bottom: -60%;
+    }
+  }
+
+  // HERO
+  .hero {
+
+    h1 {
+      width: 50%;
+      padding-bottom: 8rem;
+
+      &:after {
+        background-color: $dark-grayish-violet;
+      }
+    }
+
+    p {
+      color: $dark-grayish-violet;
+      margin-right: 2rem;
     }
   }
 
