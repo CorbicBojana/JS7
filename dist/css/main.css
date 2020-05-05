@@ -64,6 +64,9 @@ body {
 .col-3 {
   width: 33%; }
 
+.col-4 {
+  width: 25%; }
+
 h1 {
   font-size: 7.4rem;
   font-family: 'DM Serif Display', serif;
@@ -193,3 +196,34 @@ p {
     padding: 8rem 0; }
     .work h1:after {
       background-color: #2b272f; }
+
+.footer {
+  background-color: #fafafa;
+  background-image: url(../../dist/images/bg-pattern-footer-desktop.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  margin-top: 14rem; }
+  .footer .container-footer {
+    display: flex;
+    padding: 6rem 0 3rem;
+    border-bottom: 0.1rem solid #837d87; }
+    .footer .container-footer .container-social-icon {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%; }
+      .footer .container-footer .container-social-icon .social-icon-link {
+        margin-left: 1.4rem; }
+  .footer .row {
+    margin: 5rem 0; }
+    .footer .row .footer-list-item .footer-list-item-link {
+      display: inline-block;
+      padding: 1rem 0;
+      color: #2b272f;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer; }
+      .footer .row .footer-list-item .footer-list-item-link:hover {
+        color: #837d87; }
+    .footer .row .footer-list-item .primary-link {
+      padding-bottom: 2rem;
+      color: #837d87; }
