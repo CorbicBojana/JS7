@@ -110,6 +110,8 @@ p {
   height: 8rem;
   display: flex;
   align-items: center; }
+  .container-header .nav-btn {
+    display: none; }
   .container-header .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -121,20 +123,22 @@ p {
       color: #837d87;
       text-transform: uppercase;
       text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.05rem;
       cursor: pointer; }
       .container-header .nav-list .nav-list-item .nav-list-item-link:hover {
         color: #2b272f; }
     .container-header .nav-list .nav-list-item .active {
-      color: #2b272f;
-      border: 0.2rem solid #2b272f;
+      color: #2d2640;
+      border: 0.2rem solid #2d2640;
       outline: none; }
       .container-header .nav-list .nav-list-item .active:hover {
-        background-color: #2b272f;
+        background-color: #2d2640;
         color: #fafafa; }
 
 .intro {
   padding: 10rem 0 14rem;
-  background-color: #2b272f;
+  background-color: #2d2640;
   border-top: 0.1rem solid #837d87;
   position: relative; }
   .intro::after {
@@ -159,7 +163,7 @@ p {
     left: 0; }
   .intro .container {
     position: relative; }
-  .intro .intro-conteiner-content {
+  .intro .intro-container-content {
     width: 50%;
     color: #fafafa;
     position: relative;
@@ -182,7 +186,7 @@ p {
     margin-right: 2rem; }
 
 .work {
-  background-color: #2b272f;
+  background-color: #2d2640;
   background-image: url(../../dist/images/bg-pattern-how-we-work-desktop.svg);
   background-position: top right;
   background-repeat: no-repeat;
@@ -196,7 +200,7 @@ p {
     color: #fafafa;
     padding: 8rem 0; }
     .work h1:after {
-      background-color: #2b272f; }
+      background-color: #2d2640; }
 
 .footer {
   background-color: #fafafa;
@@ -220,12 +224,98 @@ p {
     .footer .row .footer-list-item .footer-list-item-link {
       display: inline-block;
       margin: 1rem 0;
-      color: #2b272f;
+      color: #2d2640;
       text-transform: uppercase;
       text-decoration: none;
+      font-weight: 700;
       cursor: pointer; }
       .footer .row .footer-list-item .footer-list-item-link:hover {
-        color: #837d87; }
+        text-decoration: underline; }
     .footer .row .footer-list-item .primary-link {
       margin-bottom: 2rem;
       color: #837d87; }
+
+@media only screen and (max-width: 780px) {
+  .container {
+    text-align: center;
+    padding: 0 2.5rem; }
+  .col-3, .col-4 {
+    width: 100%; }
+  h1 {
+    padding-top: 9rem;
+    font-size: 4.4rem; }
+  p {
+    line-height: 1.7; }
+  .nav-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer; }
+    .nav-btn .icon-menu {
+      display: none; }
+  .nav-list {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100vw;
+    background-color: #2d2640;
+    background-image: url(../../dist/images/bg-pattern-mobile-nav.svg);
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 4.5rem; }
+    .nav-list .nav-list-item {
+      margin-bottom: 3rem; }
+      .nav-list .nav-list-item .nav-list-item-link {
+        color: #fafafa;
+        font-size: 2.2rem; }
+        .nav-list .nav-list-item .nav-list-item-link:hover {
+          color: #95a9c6; }
+      .nav-list .nav-list-item .active {
+        border-color: #fafafa;
+        padding: 1rem 8rem; }
+        .nav-list .nav-list-item .active:hover {
+          border-color: #95a9c6; }
+  .intro {
+    padding: 0 0 9rem;
+    border-top: none; }
+    .intro .container {
+      display: flex;
+      flex-direction: column;
+      padding: 0; }
+      .intro .container .intro-container-content {
+        padding: 0 2.5rem;
+        order: 2;
+        width: 100%; }
+        .intro .container .intro-container-content h1::after {
+          background-color: transparent; }
+      .intro .container .intro-img {
+        position: relative; }
+  .hero {
+    margin-top: 0;
+    padding: 14rem 0; }
+    .hero h1 {
+      width: 100%; }
+      .hero h1::after {
+        left: 35%; }
+  .work {
+    flex-direction: column;
+    padding: 0; }
+    .work h1 {
+      width: 80%; }
+    .work .button-holder {
+      padding-bottom: 7rem; }
+  .footer .container-footer {
+    flex-direction: column; }
+    .footer .container-footer .container-social-icon {
+      justify-content: center;
+      margin-top: 3rem; }
+  .footer .row {
+    margin: 0; }
+    .footer .row .footer-list {
+      margin-top: 4rem; } }
