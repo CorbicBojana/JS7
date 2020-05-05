@@ -103,7 +103,8 @@ p {
 
       .nav-list-item-link {
         display: inline-block;
-        padding: 1rem 2.4rem;
+        margin: 0 0.4rem;
+        padding: 1rem 2rem;
         color: $dark-grayish-violet;
         text-transform: uppercase;
         text-decoration: none;
@@ -227,6 +228,7 @@ p {
   background-position: top left;
   background-repeat: no-repeat;
   margin-top: 14rem;
+  padding-bottom: 6rem;
 
   .container-footer {
     display: flex;
@@ -245,14 +247,14 @@ p {
   }
 
   .row {
-    margin: 5rem 0;
+    margin: 5rem 0 0;
 
     
     .footer-list-item {
 
       .footer-list-item-link {
         display: inline-block;
-        padding: 1rem 0;
+        margin: 1rem 0;
         color: $very-dark-violet;
         text-transform: uppercase;
         text-decoration: none;
@@ -264,7 +266,7 @@ p {
       }
 
       .primary-link {
-        padding-bottom: 2rem;
+        margin-bottom: 2rem;
         color: $dark-grayish-violet;
       }
     }

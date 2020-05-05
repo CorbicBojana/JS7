@@ -116,7 +116,8 @@ p {
     width: 100%; }
     .container-header .nav-list .nav-list-item .nav-list-item-link {
       display: inline-block;
-      padding: 1rem 2.4rem;
+      margin: 0 0.4rem;
+      padding: 1rem 2rem;
       color: #837d87;
       text-transform: uppercase;
       text-decoration: none;
@@ -202,7 +203,8 @@ p {
   background-image: url(../../dist/images/bg-pattern-footer-desktop.svg);
   background-position: top left;
   background-repeat: no-repeat;
-  margin-top: 14rem; }
+  margin-top: 14rem;
+  padding-bottom: 6rem; }
   .footer .container-footer {
     display: flex;
     padding: 6rem 0 3rem;
@@ -214,10 +216,10 @@ p {
       .footer .container-footer .container-social-icon .social-icon-link {
         margin-left: 1.4rem; }
   .footer .row {
-    margin: 5rem 0; }
+    margin: 5rem 0 0; }
     .footer .row .footer-list-item .footer-list-item-link {
       display: inline-block;
-      padding: 1rem 0;
+      margin: 1rem 0;
       color: #2b272f;
       text-transform: uppercase;
       text-decoration: none;
@@ -225,5 +227,5 @@ p {
       .footer .row .footer-list-item .footer-list-item-link:hover {
         color: #837d87; }
     .footer .row .footer-list-item .primary-link {
-      padding-bottom: 2rem;
+      margin-bottom: 2rem;
       color: #837d87; }
