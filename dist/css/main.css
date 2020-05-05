@@ -246,14 +246,15 @@ p {
     font-size: 4.4rem; }
   p {
     line-height: 1.7; }
-  .nav-btn {
+  .container-header .nav-btn {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-    cursor: pointer; }
-    .nav-btn .icon-menu {
+    width: 100%; }
+    .container-header .nav-btn .icon-menu {
       display: none; }
-  .nav-list {
+    .container-header .nav-btn .icon-close {
+      cursor: pointer; }
+  .container-header .nav-list {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -269,17 +270,17 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 4.5rem; }
-    .nav-list .nav-list-item {
+    .container-header .nav-list .nav-list-item {
       margin-bottom: 3rem; }
-      .nav-list .nav-list-item .nav-list-item-link {
+      .container-header .nav-list .nav-list-item .nav-list-item-link {
         color: #fafafa;
         font-size: 2.2rem; }
-        .nav-list .nav-list-item .nav-list-item-link:hover {
+        .container-header .nav-list .nav-list-item .nav-list-item-link:hover {
           color: #95a9c6; }
-      .nav-list .nav-list-item .active {
+      .container-header .nav-list .nav-list-item .active {
         border-color: #fafafa;
         padding: 1rem 8rem; }
-        .nav-list .nav-list-item .active:hover {
+        .container-header .nav-list .nav-list-item .active:hover {
           border-color: #95a9c6; }
   .intro {
     padding: 0 0 9rem;

@@ -19,52 +19,58 @@
     }
 
     // HEADER
-    .nav-btn {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        cursor: pointer;
+    .container-header {
 
-        .icon-menu {
-            display: none;
-        }
-    }
-
-    .nav-list {
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        top: 8rem;
-        left: 0;
-        bottom: 0;
-        z-index: 100;
-        width: 100vw;
-        background-color: $dark-violet;
-        background-image: url(../../dist/images/bg-pattern-mobile-nav.svg);
-        background-position: bottom center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding-top: 4.5rem;
-
-        .nav-list-item {
-            margin-bottom: 3rem;
-
-            .nav-list-item-link {
-                color: $very-light-gray;
-                font-size: 2.2rem;
-
-                &:hover {
-                    color: $grayish-blue;
-                  }
+        .nav-btn {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+    
+            .icon-menu {
+                display: none;
             }
 
-            .active {
-                border-color: $very-light-gray;
-                padding: 1rem 8rem;
-
-                &:hover {
-                    border-color: $grayish-blue;
+            .icon-close {
+                cursor: pointer;
+            }
+        }
+    
+        .nav-list {
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 8rem;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+            width: 100vw;
+            background-color: $dark-violet;
+            background-image: url(../../dist/images/bg-pattern-mobile-nav.svg);
+            background-position: bottom center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-top: 4.5rem;
+    
+            .nav-list-item {
+                margin-bottom: 3rem;
+    
+                .nav-list-item-link {
+                    color: $very-light-gray;
+                    font-size: 2.2rem;
+    
+                    &:hover {
+                        color: $grayish-blue;
+                      }
+                }
+    
+                .active {
+                    border-color: $very-light-gray;
+                    padding: 1rem 8rem;
+    
+                    &:hover {
+                        border-color: $grayish-blue;
+                    }
                 }
             }
         }
