@@ -293,6 +293,13 @@ p {
   .intro {
     padding: 0 0 9rem;
     border-top: none; }
+    .intro::after {
+      background-image: url("../../dist/images/bg-pattern-intro-right-mobile.svg");
+      background-position: bottom right;
+      height: 110%; }
+    .intro::before {
+      background-image: url("../../dist/images/bg-pattern-intro-left-mobile.svg");
+      background-position: top left; }
     .intro .container {
       display: flex;
       flex-direction: column;
@@ -314,17 +321,20 @@ p {
         left: 35%; }
   .work {
     flex-direction: column;
-    padding: 0; }
+    padding: 0;
+    background-image: url("../../dist/images/bg-pattern-how-we-work-mobile.svg"); }
     .work h1 {
       width: 80%; }
     .work .button-holder {
       padding-bottom: 7rem; }
-  .footer .container-footer {
-    flex-direction: column; }
-    .footer .container-footer .container-social-icon {
-      justify-content: center;
-      margin-top: 3rem; }
-  .footer .row {
-    margin: 0; }
-    .footer .row .footer-list {
-      margin-top: 4rem; } }
+  .footer {
+    background-image: url("../../dist/images/bg-pattern-footer-mobile.svg"); }
+    .footer .container-footer {
+      flex-direction: column; }
+      .footer .container-footer .container-social-icon {
+        justify-content: center;
+        margin-top: 3rem; }
+    .footer .row {
+      margin: 0; }
+      .footer .row .footer-list {
+        margin-top: 4rem; } }

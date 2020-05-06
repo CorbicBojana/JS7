@@ -103,6 +103,17 @@
         padding: 0 0 9rem;
         border-top: none;
 
+        &::after {
+            background-image: url("../../dist/images/bg-pattern-intro-right-mobile.svg");
+            background-position: bottom right;
+            height: 110%;
+        }
+
+        &::before {
+            background-image: url("../../dist/images/bg-pattern-intro-left-mobile.svg");
+            background-position: top left;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -145,6 +156,7 @@
     .work {
         flex-direction: column;
         padding: 0;
+        background-image: url("../../dist/images/bg-pattern-how-we-work-mobile.svg");
 
         h1 {
             width: 80%;
@@ -157,6 +169,7 @@
 
     // FOOTER
     .footer {
+        background-image: url("../../dist/images/bg-pattern-footer-mobile.svg");
 
         .container-footer {
             flex-direction: column;

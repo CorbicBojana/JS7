@@ -14,3 +14,11 @@ navBtn.addEventListener("click", function() {
         navList.style.display = "none"
     }
 })
+
+var navListItemLink = document.getElementById("nav-list-item-link");
+
+for ( var i=0; i < navListItemLink.length; i++ ) {
+    navListItemLink.addEventListener("click", function(e) {
+        navBtn.click()
+    })
+}
