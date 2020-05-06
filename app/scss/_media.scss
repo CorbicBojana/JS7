@@ -21,21 +21,20 @@
     // HEADER
     .container-header {
 
-        .nav-btn {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-    
+        // open nav menu
+        .open-nav {
+
             .icon-menu {
                 display: none;
             }
 
             .icon-close {
+                display: inline-block;
                 cursor: pointer;
             }
         }
-    
-        .nav-list {
+
+        .open-nav-list {
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
@@ -61,7 +60,7 @@
     
                     &:hover {
                         color: $grayish-blue;
-                      }
+                    }
                 }
     
                 .active {
@@ -73,6 +72,29 @@
                     }
                 }
             }
+        }
+
+        // close nav menu 
+        .close-nav {
+
+            .icon-menu {
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .icon-close {
+                display: none;
+            }
+        }
+
+        .nav-btn {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    
+        .nav-list {
+            display: none;
         }
     }
 
