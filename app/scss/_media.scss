@@ -134,6 +134,7 @@
 
             .intro-img {
                 position: relative;
+                overflow: hidden;
             }
         }
     }
@@ -188,5 +189,18 @@
             }
         }
     }
-
 }    
+
+@media screen and (max-width: 980px) and (min-width: 780px) {
+    
+    .container {
+        max-width: 72rem;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 980px) {
+    
+    .container {
+        max-width: 92rem;
+    }
+}

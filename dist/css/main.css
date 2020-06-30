@@ -311,7 +311,8 @@ p {
         .intro .container .intro-container-content h1::after {
           background-color: transparent; }
       .intro .container .intro-img {
-        position: relative; }
+        position: relative;
+        overflow: hidden; }
   .hero {
     margin-top: 0;
     padding: 14rem 0; }
@@ -338,3 +339,11 @@ p {
       margin: 0; }
       .footer .row .footer-list {
         margin-top: 4rem; } }
+
+@media screen and (max-width: 980px) and (min-width: 780px) {
+  .container {
+    max-width: 72rem; } }
+
+@media screen and (max-width: 1200px) and (min-width: 980px) {
+  .container {
+    max-width: 92rem; } }
