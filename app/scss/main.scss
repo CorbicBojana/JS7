@@ -4,98 +4,99 @@
 @import "fonts";
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-size: 1.6rem;
-    font-family: 'Karla', sans-serif; 
-    overflow-x: hidden; 
-  }
-  
-  .container {
-    max-width: 98rem;
-    margin: 0 auto;
-  }
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Karla', sans-serif; 
+  overflow-x: hidden; 
+}
+
+.container {
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+h1 {
+  font-size: 7.4rem;
+  font-family: 'DM Serif Display', serif;
+  padding-top: 6rem;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 0.1rem;
+    background-color: $very-light-gray;
   }
-  
-  .col-2 {
-    width: 50%;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-family: 'DM Serif Display', serif;
+  margin-top: 4rem;
+}
+
+p {
+  margin: 3rem 0;
+  line-height: 1.5;
+}
+
+.button {
+  padding: 1rem 2.4rem;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: transparent;
+  color: $very-light-gray;
+  border: 0.2rem solid $very-light-gray;
+
+  &:hover {
+    background-color: $very-light-gray;
+    color: $very-dark-violet;
+    border-color: $very-light-gray;
   }
+}
 
-  .col-3 {
-    width: 33%;
-  }
+// HEADER
+.container-header {
+  height: 8rem;
+  display: flex;
+  align-items: center;
 
-  h1 {
-    font-size: 5.8rem;
-    font-family: 'DM Serif Display', serif;
-    padding-top: 6rem;
-    position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 30%;
-      height: 0.1rem;
-      background-color: $very-light-gray;
-    }
-  }
-
-  h3 {
-    font-size: 3.2rem;
-    font-family: 'DM Serif Display', serif;
-    margin-top: 4rem;
-  }
-
-  p {
-    margin: 2rem 0;
-    line-height: 1.4;
-  }
-
-  .button {
-    padding: 0.8rem 2rem;
-    text-transform: uppercase;
-    outline: none;
-    cursor: pointer;
-  }
-
-  .button-primary {
-    background-color: transparent;
-    color: $very-light-gray;
-    border: 0.1rem solid $very-light-gray;
-
-    &:hover {
-      background-color: $very-light-gray;
-      color: $very-dark-violet;
-      border-color: $very-light-gray;
-    }
-  }
-
-  // HEADER
-  .container-header {
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 10;
-  }
-
-  .container-logo {
-    display: inline-block;
+  .nav-btn {
+    display: none;
   }
 
   .nav-list {
@@ -104,13 +105,16 @@ html {
     width: 100%;
 
     .nav-list-item {
-      display: inline-block;
-      
+
       .nav-list-item-link {
-        text-decoration: none;
-        text-transform: uppercase;
+        display: inline-block;
+        margin: 0 0.4rem;
+        padding: 1rem 2rem;
         color: $dark-grayish-violet;
-        padding: 0.8rem 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        letter-spacing: 0.05rem;
         cursor: pointer;
 
         &:hover {
@@ -119,94 +123,162 @@ html {
       }
 
       .active {
-        color: $very-dark-violet;
-        border: 0.1rem solid $very-dark-violet;
+        color: $dark-violet;
+        border: 0.2rem solid $dark-violet;
         outline: none;
 
         &:hover {
-          background-color: $very-dark-violet;
+          background-color: $dark-violet;
           color: $very-light-gray;
         }
       }
     }
   }
+}
 
-  // INTRO
-  .intro {
-    height: 90vh;
+// INTRO
+.intro {
+  padding: 10rem 0 14rem;
+  background-color: $dark-violet;
+  border-top: 0.1rem solid $dark-grayish-violet;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../dist/images/bg-pattern-intro-right-desktop.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  } 
+
+  &::before {
+    content: "";
+    background-image: url("../../dist/images/bg-pattern-intro-left-desktop.svg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .intro-container-content {
+    width: 50%;
+    color: $very-light-gray;
+    position: relative;
+    z-index: 10;
+  }
+
+  .intro-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+// HERO
+.hero {
+  margin-top: 14rem;
+  padding: 10rem 0 14rem;
+
+  h1 {
+    width: 50%;
+    padding-bottom: 8rem;
+
+    &:after {
+      background-color: $dark-grayish-violet;
+    }
+  }
+
+  p {
+    color: $dark-grayish-violet;
+    margin-right: 2rem;
+  }
+}
+
+// WORK
+.work {
+  background-color: $dark-violet;
+  background-image: url(../../dist/images/bg-pattern-how-we-work-desktop.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    width: 68%;
+    color: $very-light-gray;
+    padding: 8rem 0;
+
+    &:after {
+      background-color: $dark-violet;
+    }
+  }
+}
+
+// FOOTER
+.footer {
+  background-color: $very-light-gray;
+  background-image: url(../../dist/images/bg-pattern-footer-desktop.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  margin-top: 14rem;
+  padding-bottom: 6rem;
+
+  .container-footer {
     display: flex;
-    padding: 10rem 0;
-    margin-bottom: 20rem;
-    background-color: $very-dark-violet;
-    border-top: 0.1rem solid $dark-grayish-violet;
-
-    .container {
+    padding: 6rem 0 3rem;
+    border-bottom: 0.1rem solid $dark-grayish-violet;
+  
+    .container-social-icon {
       display: flex;
-    }
+      justify-content: flex-end;
+      width: 100%;
 
-    .intro-content {
-      width: 50%;
-      color: $very-light-gray;
-    }
-
-    .intro-img {
-      width: 50%;
-
-      img {
-        max-width: 100%;
+      .social-icon-link {
+        margin-left: 1.4rem;
       }
-    }
-
-    .intro-img-top {
-      position: absolute;
-      top: 10%;
-      right: 0;
-    }
-
-    .intro-img-bottom {
-      position: absolute;
-      left: 0;
-      bottom: -60%;
     }
   }
 
-  // HERO
-  .hero {
+  .row {
+    margin: 5rem 0 0;
 
-    h1 {
-      width: 50%;
-      padding-bottom: 8rem;
+    
+    .footer-list-item {
 
-      &:after {
-        background-color: $dark-grayish-violet;
+      .footer-list-item-link {
+        display: inline-block;
+        margin: 1rem 0;
+        color: $dark-violet;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .primary-link {
+        margin-bottom: 2rem;
+        color: $dark-grayish-violet;
       }
     }
-
-    p {
-      color: $dark-grayish-violet;
-      margin-right: 2rem;
-    }
   }
+}
 
-  // WORK
-  .work {
-    background-color: $very-dark-violet;
-    padding: 0 8rem;
-
-    h1 {
-      width: 50%;
-      display: inline-block;
-
-      &:after {
-        background-color: $very-dark-violet;
-      }
-    }
-
-    .button-holder {
-      background-image: url(../../dist/images/bg-pattern-how-we-work-desktop.svg);
-    }
-
-  }
-
-
-  @import "media";
+@import "media";

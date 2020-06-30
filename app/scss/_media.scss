@@ -1,4 +1,192 @@
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 780px) {
 
+    .container {
+        text-align: center;
+        padding: 0 2.5rem;
+    }
 
-}
+    .col-3, .col-4 {
+        width: 100%;
+    }
+
+    h1 {
+        padding-top: 9rem;
+        font-size: 4.4rem;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+
+    // HEADER
+    .container-header {
+
+        // open nav menu
+        .open-nav {
+
+            .icon-menu {
+                display: none;
+            }
+
+            .icon-close {
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+
+        .open-nav-list {
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 8rem;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+            width: 100vw;
+            background-color: $dark-violet;
+            background-image: url(../../dist/images/bg-pattern-mobile-nav.svg);
+            background-position: bottom center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-top: 4.5rem;
+    
+            .nav-list-item {
+                margin-bottom: 3rem;
+    
+                .nav-list-item-link {
+                    color: $very-light-gray;
+                    font-size: 2.2rem;
+    
+                    &:hover {
+                        color: $grayish-blue;
+                    }
+                }
+    
+                .active {
+                    border-color: $very-light-gray;
+                    padding: 1rem 8rem;
+    
+                    &:hover {
+                        border-color: $grayish-blue;
+                    }
+                }
+            }
+        }
+
+        // close nav menu 
+        .close-nav {
+
+            .icon-menu {
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .icon-close {
+                display: none;
+            }
+        }
+
+        .nav-btn {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    
+        .nav-list {
+            display: none;
+        }
+    }
+
+    // INTRO
+    .intro {
+        padding: 0 0 9rem;
+        border-top: none;
+
+        &::after {
+            background-image: url("../../dist/images/bg-pattern-intro-right-mobile.svg");
+            background-position: bottom right;
+            height: 110%;
+        }
+
+        &::before {
+            background-image: url("../../dist/images/bg-pattern-intro-left-mobile.svg");
+            background-position: top left;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+
+            .intro-container-content {
+                padding: 0 2.5rem;
+                order: 2;
+                width: 100%;
+
+                h1 {
+
+                    &::after {
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            .intro-img {
+                position: relative;
+            }
+        }
+    }
+
+    // HERO 
+    .hero {
+        margin-top: 0;
+        padding: 14rem 0;
+
+        h1 {
+            width: 100%;
+
+            &::after {
+                left: 35%;
+            }
+        }
+    }
+
+    // WORK
+    .work {
+        flex-direction: column;
+        padding: 0;
+        background-image: url("../../dist/images/bg-pattern-how-we-work-mobile.svg");
+
+        h1 {
+            width: 80%;
+        }
+
+        .button-holder {
+            padding-bottom: 7rem;
+        }
+    }
+
+    // FOOTER
+    .footer {
+        background-image: url("../../dist/images/bg-pattern-footer-mobile.svg");
+
+        .container-footer {
+            flex-direction: column;
+
+            .container-social-icon  {
+                justify-content: center;
+                margin-top: 3rem;
+            }
+        }
+
+        .row {
+            margin: 0;
+
+            .footer-list {
+                margin-top: 4rem;
+            }
+        }
+    }
+
+}    
